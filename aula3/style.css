@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    overflow-x: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.container{
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+section{
+    border: 10px solid rgb(27, 27, 27);
+    width: 27rem;
+    height: 50rem;
+    border-radius: 50px;
+    position: relative;
+    background-color: rgb(232, 243, 243);
+    box-shadow: 2px 2px 40px rgb(182, 255, 145);
+}
+
+
+#visor{  
+    position: absolute;
+    width: 100%;
+    height: 35%;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#visor h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    font-size: 28pt;
+    color: black;
+    letter-spacing: 0.5rem;
+}
+
+#numbers{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 35pt;
+    word-break: break-all;
+    overflow-y: scroll;
+}
+
+#teclado{
+    width: 100%;
+    height: 65%;
+    position: absolute;
+    bottom: 0;
+    border-top-right-radius: 75px;
+    border-bottom-left-radius: 38px;
+    border-bottom-right-radius: 38px;
+    background-color: rgb(5, 5, 5);
+}
+
+#teclado ul{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 20pt;
+}
+
+#teclado li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(18, 255, 109);
+    padding: 15px;
+    width: 80px;
+    height: 80px;
+    border-radius:80%;
+    cursor: pointer;
+}
+
+
+li:hover{
+    box-shadow: 2px 2px 15px rgb(18, 255, 109);
+    transition: .2s;
+}
+
+li#comma{
+    font-size: 30pt;
+}
+
+li#zero{
+    border-radius:60px;
+    width: 180px;
+    font-size: 25pt;
+}
+
+/*personalizando o scroll*/
+
+#numbers::-webkit-scrollbar{
+    width: 10px;
+}
+
+#numbers::-webkit-scrollbar-thumb{
+    background:rgba(5, 5, 5, 0.4);
+    border-radius: 2px;
+}
+
+
+/*#numbers p{
+    border: 1px solid red;
+    width: 100%;
+    height: 100%;
+    font-size: 25pt;
+    color: ;
+}*/

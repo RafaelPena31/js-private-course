@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste</title>
+    <style>
+      * {
+        text-align: center;
+      }
+
+      #containerListView {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      input {
+        height: 40px;
+        width: 400px;
+        background-color: #fff;
+        border-radius: 10px;
+        border: 1px solid grey;
+        padding-left: 15px;
+        font-size: 14pt;
+        text-align: left;
+      }
+
+      #add {
+        height: 45px;
+        width: 100px;
+        border-radius: 10px;
+      }
+
+      section {
+        display: flex;
+        flex-direction: row;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>To-do list do amor da sua vida</h1>
+
+    <div id="containerListView">
+      <h2>to-dos</h2>
+
+      <div>
+        <input type="text" name="addToDo" id="txtAddToDo" />
+        <button id="add" onclick="onClickAddItem()">Add item</button>
+      </div>
+
+      <ul id="listView"></ul>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

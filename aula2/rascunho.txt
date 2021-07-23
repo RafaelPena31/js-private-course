@@ -1,0 +1,18 @@
+  let container = document.createElement("ul");
+  let title = document.createElement("h1");
+  let li = document.createElement("li");
+  let li2 = document.createElement("li");
+  let btn = document.createElement("input");
+  const id = item + index;
+  title.id = id;
+  btn.setAttribute("type", "button");
+  btn.setAttribute("value", "Change name");
+  btn.onclick = () => onPressChange(id);
+  title.textContent = item.name;
+  li.textContent = ` anos: ${item.age}`;
+  li2.textContent = `pet: ${item.pet}`;
+  container.appendChild(title);
+  container.appendChild(li);
+  container.appendChild(li2);
+  container.appendChild(btn);
+  body.appendChild(container);
